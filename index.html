@@ -1253,11 +1253,11 @@ const PLAYERS = [
     ],
     "quiz": [
       {
-        "q": "Le Gassick is a Target off our Mouse (weakest on-ball defender). What\u2019s his primary role in this second unit?",
+        "q": "Which of the following scout notes are incorrect?",
         "opts": [
-          "Rim runner",
-          "Post scorer",
-          "Facilitator who can also shoot"
+          "SNIPER",
+          "TARGET - Mouse",
+          "UNDER"
         ],
         "correct": 2
       }
@@ -1461,7 +1461,7 @@ const TEAM_OVERVIEW = {
     {
       "situation": "Off-Ball & DHO",
       "personnel": "All",
-      "call": "LET THROUGH",
+      "call": "LET THROUGH & KYP!",
       "status": ""
     },
     {
@@ -1471,15 +1471,21 @@ const TEAM_OVERVIEW = {
         "vs Te Rangi"
       ],
       "call": [
-        "Tyrell 1v1 + all others POUNCE",
-        "All 1-3 POUNCE"
+        "Tyrell & Holt 1v1 + all others POUNCE",
+        "4s & 5s 1v1 + all others POUNCE"
       ],
       "status": ""
     },
     {
-      "situation": "Full Court (after makes and deadballs)",
-      "personnel": "-",
-      "call": "OFF ON PJC",
+      "situation": "Full Court",
+      "personnel": [
+        "After makes & FTs",
+        "Deadballs"
+      ],
+      "call": [
+        "OFF ON PJC",
+        "12 (BACK TO 2-3 ZONE, MORPH TO 1-5 RED AT 12 ON SHOT CLOCK)"
+      ],
       "status": ""
     },
     {
@@ -1495,44 +1501,45 @@ const TEAM_OVERVIEW = {
   ],
   "startingOffense": [
     {
-      "situation": "Transition",
+      "situation": "Transition (after misses & TOs)",
       "details": [
-        "Advantage from speed = numbers, space",
-        "Run to corners and early targets"
+        "Run to corners look for numbers advantage",
+        "Drive targets - make them defend STEP -> PISTOL"
       ],
       "status": ""
     },
     {
       "situation": "Trigger Roll Types",
       "details": [
-        "Arrive alone \u2014 lob",
-        "Gray \u2014 ahead, pocket"
+        "Arrive alone \u2014 FLIP, LOB",
+        "Gray \u2014 AHEAD, POCKET = CLIDE"
       ],
       "status": ""
     },
     {
-      "situation": "HC Sets (When Slow)",
+      "situation": "HC Sets (after makes & DB)",
       "details": [
-        "Away, Away 4 (involve Vasiljevic / Mennenga)",
-        "Horns",
-        "Cross (with PJC defending)",
-        "Rub \u2014 ram, ram stack"
+        "4 in right corner except HORNS & AWAY",
+        "Horns - stamp, backside, 45, 2 flare",
+        "Away - twirl, stamp, step, stack (from left corner)",
+        "Rub - 25 stack (from left corner), 52",
+        "Wedge - over = punch, under = roll & middle guy cuts"
       ],
       "status": ""
     },
     {
       "situation": "Targets",
       "details": [
-        "Jackson-Cartwright (PJC)",
-        "Vasiljevic"
+        "MOUSE Jackson-Cartwright (PJC)",
+        "TURTLE Vasiljevic"
       ],
       "status": ""
     },
     {
       "situation": "NZ's PnR Coverages",
       "details": [
-        "4 \u2014 GREY",
-        "5 \u2014 HIGH DROP / GREY",
+        "4 \u2014 GRAY",
+        "5 \u2014 HIGH DROP / GRAY",
         "Possible \u2014 BLACK"
       ],
       "status": ""
@@ -1541,13 +1548,13 @@ const TEAM_OVERVIEW = {
 };
 const TEAM_QUIZ = [
   {
-    "q": "What's our very first read \u2014 the early ball-screen action between Jackson-Cartwright and Le'Afa?",
+    "q": "What's our coverage on initial ball-screens between Jackson-Cartwright and Bediako?",
     "opts": [
-      "DROP & UNDER",
-      "5 HIGH DROP",
-      "RED"
+      "Red",
+      "Black",
+      "Drop & Under"
     ],
-    "correct": 0
+    "correct": 2
   },
   {
     "q": "How do we defend a ball screen for Breakers positions 1-4?",
@@ -1568,13 +1575,13 @@ const TEAM_QUIZ = [
     "correct": 2
   },
   {
-    "q": "What are we ready to get to versus ball screens?",
+    "q": "Jackson-Cartwright receives a re-screen. How do we try to avoid the re-screen?",
     "opts": [
-      "LOW DROP & MUCK + BLACK",
-      "5 HIGH DROP",
-      "RED"
+      "Over",
+      "Under",
+      "Mix it up"
     ],
-    "correct": 0
+    "correct": 1
   },
   {
     "q": "How do we play the Breakers\u2019 Off-Ball screens and DHOs?",
@@ -2064,7 +2071,6 @@ const MATCHUPS = [
     "bullets": [
       "HINTON",
       "VELICKA",
-      "MCDANIEL",
       "MACKINNON"
     ]
   },
@@ -2073,8 +2079,7 @@ const MATCHUPS = [
     "bullets": [
       "VELICKA",
       "HINTON",
-      "MAYEN",
-      "MCDANIEL"
+      "MAYEN"
     ]
   },
   {
@@ -2137,8 +2142,7 @@ const MATCHUPS = [
     "bullets": [
       "VELICKA",
       "NORTON",
-      "MACKINNON",
-      "MCDANIEL"
+      "MACKINNON"
     ]
   },
   {
